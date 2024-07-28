@@ -2,6 +2,7 @@ package com.awcindia.notesapp.View
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -55,6 +56,9 @@ class UpdateActivity : AppCompatActivity() {
             intent.putExtra("id2", currentId)
             setResult(RESULT_OK, intent)
             finish()
+        }
+        else{
+            Toast.makeText(this, "Data has been not updated" , Toast.LENGTH_SHORT).show()
         }
 
     }
