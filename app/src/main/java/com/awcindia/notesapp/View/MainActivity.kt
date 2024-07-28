@@ -63,6 +63,9 @@ class MainActivity : AppCompatActivity(), NoteAdapter.OnItemClickListener {
             resultContract.launch(i)
         }
 
+
+        ejnewhdyqahbdqj
+
         ItemTouchHelper(object :
             ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.LEFT or ItemTouchHelper.RIGHT) {
             override fun onMove(
@@ -70,7 +73,7 @@ class MainActivity : AppCompatActivity(), NoteAdapter.OnItemClickListener {
                 viewHolder: RecyclerView.ViewHolder,
                 target: RecyclerView.ViewHolder,
             ): Boolean {
-                TODO("Not yet implemented")
+                return false
             }
 
             override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
