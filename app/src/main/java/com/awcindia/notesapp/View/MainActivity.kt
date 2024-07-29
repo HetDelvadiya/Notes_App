@@ -43,12 +43,6 @@ class MainActivity : AppCompatActivity(), NoteAdapter.OnItemClickListener {
         }
 
 
-
-        println("branch changes experimental")
-        println("change 2")
-        println("hello how to push code")
-        println("from the master branch")
-
         val adapter = NoteAdapter()
         adapter.setOnItemClickListener(this)
         binding.rv.adapter = adapter
