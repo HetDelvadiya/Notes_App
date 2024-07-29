@@ -42,6 +42,10 @@ class MainActivity : AppCompatActivity(), NoteAdapter.OnItemClickListener {
             insets
         }
 
+
+
+        println("branch changes experimental")
+
         val adapter = NoteAdapter()
         adapter.setOnItemClickListener(this)
         binding.rv.adapter = adapter
