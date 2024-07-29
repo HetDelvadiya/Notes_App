@@ -45,6 +45,7 @@ class MainActivity : AppCompatActivity(), NoteAdapter.OnItemClickListener {
 
 
         println("branch changes experimental")
+        println("change 2")
 
         val adapter = NoteAdapter()
         adapter.setOnItemClickListener(this)
