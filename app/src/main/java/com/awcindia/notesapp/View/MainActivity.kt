@@ -46,6 +46,7 @@ class MainActivity : AppCompatActivity(), NoteAdapter.OnItemClickListener {
 
         println("branch changes experimental")
         println("change 2")
+        println("hello how to push code")
 
         val adapter = NoteAdapter()
         adapter.setOnItemClickListener(this)
@@ -57,7 +58,7 @@ class MainActivity : AppCompatActivity(), NoteAdapter.OnItemClickListener {
 
         val repository = (application as NoteApplication).repository
         mainViewModel =
-            ViewModelProvider(this, MainFactory(repository)).get(MainViewModel::class.java)
+            androidx.lifecycle.ViewModelProvider(this, MainFactory(repository)).get(MainViewModel::class.java)
 
         mainViewModel.getNotes().observe(this, Observer { note ->
             adapter.setNotes(note)
